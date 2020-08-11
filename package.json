@@ -1,0 +1,43 @@
+{
+  "name": "support-ticket-api",
+  "version": "1.0.0",
+  "description": "API Endpoint for Support Ticket",
+  "main": "server.js",
+  "scripts": {
+    "serve": "nodemon server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afolabiabass/support-ticket-api.git"
+  },
+  "keywords": [
+    "support"
+  ],
+  "author": "Afolabi Abass",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afolabiabass/support-ticket-api/issues"
+  },
+  "homepage": "https://github.com/afolabiabass/support-ticket-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "connect-redis": "^4.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.19",
+    "nodemon": "^2.0.3",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "redis": "^3.0.2",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "supertest": "^4.0.2"
+  }
+}
