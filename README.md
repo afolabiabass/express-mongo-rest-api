@@ -1,6 +1,5 @@
-# SUPPORT TICKET API
-API Endpoint for support ticket endpoint.
-
+ # CRUD API with Express - MongoDB
+Restful api.
 
 ### Installation
 Pull the repository 
