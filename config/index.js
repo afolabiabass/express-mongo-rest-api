@@ -1,9 +1,13 @@
-const app = require('./app');
-const database = require('./database');
-const redis = require('./redis');
+const fs = require('fs');
+const path = require('path');
 
-module.exports = {
-  app,
-  database,
-  redis
-}
+const config = {};
+
+fs.readdirSync(__dirname).forEach(function(file) {
+  const name = file.slice(0, -3);
+  if (name !== 'index') {
+    config[name] = require(path.join(__dirname, name));
+  }
+});
+
+module.exports = config
